@@ -518,34 +518,32 @@
                             <h2>REQUEST A QUOTE</h2><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                     aria-hidden="true">&times;</span></button>
                         </div>
-                        <form id="request-quote" name="request_quote">
+                        <form id="" method="POST" action="send_email.php" name="">
                             <div class="col-sm-12 col-xs-12">
-                                <div class="input-group"><input type="text" class="form-control" name="rq_name"
-                                        placeholder="Name"> <small class="blank-error error">Please enter your name!</small>
-                                    <small class="invalid-error error">Invalid name!</small></div>
+                                <div class="input-group"><input type="text" class="form-control" name="name"
+                                        placeholder="Name" maxlength="32" required>
+                                </div>
                             </div>
                             <div class="col-sm-12 col-xs-12">
-                                <div class="input-group"><input type="email" class="form-control" name="rq_email"
-                                        placeholder="Email"> <small class="blank-error error">Please enter your email!</small>
-                                    <small class="invalid-error error">Invalid email!</small></div>
+                                <div class="input-group"><input type="email" class="form-control" name="email"
+                                        placeholder="Email" required>
+                                </div>
                             </div>
                             <div class="col-sm-6 col-xs-12">
-                                <div class="input-group"><input type="text" class="form-control" name="rq_country"
-                                        placeholder="Country"> <small class="blank-error error">Please enter your
-                                        country name!</small> <small class="invalid-error error">Invalid country!</small></div>
+                                <div class="input-group"><input type="text" class="form-control" maxlength="40" name="country"
+                                        placeholder="Country" required> </div>
                             </div>
                             <div class="col-sm-6 col-xs-12">
-                                <div class="input-group"><input type="tel" class="form-control" name="rq_phone"
-                                        placeholder="Phone"> <small class="invalid-error error">Invalid phone number!</small></div>
+                                <div class="input-group"><input type="tel" maxlength="20" class="form-control" name="phone"
+                                        placeholder="Phone" required> </div>
                             </div>
                             <div class="col-sm-12 col-xs-12">
-                                <div class="input-group"><textarea class="form-control" name="rq_msg" placeholder="Message"></textarea><small
-                                        class="blank-error error">Please enter your message!</small></div>
+                                <div class="input-group"><textarea class="form-control" name="message" placeholder="Message"
+                                        required></textarea></div>
                             </div>
                             <div class="col-sm-12 col-xs-12">
                                 <div class="input-group no-pad"><input type="submit" class="submit-btn" value="Submit">
-                                    <div class="submit-loader"><i class="fa fa-circle-o-notch fa-spin"></i>&nbsp;&nbsp;&nbsp;Sending
-                                        Request</div>
+
                                 </div>
                             </div>
                         </form>

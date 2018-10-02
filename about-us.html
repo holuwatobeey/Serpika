@@ -217,7 +217,7 @@
                                 valuable reputation over the globe.</p>
                             <ul>
                                 <li><a data-toggle="modal" data-target="#requestQuote" class="banner-btn">Quick Enquiry</a></li>
-                                <li>CALL US: <a href="tel:+919828584906">+919828584906</a></li>
+                                <li>CALL US: <a href="tel:+918420197208">+919828584906</a></li>
                             </ul>
                         </div>
                     </div>
@@ -402,7 +402,71 @@
             </div>
         </section>
     </div>
-    +919828584906
+    <footer class="footer padding-bottom-none">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8">
+                        <ul class="ftr-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="client-testimonials.html">Testimonials</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="jobs-in-kolkata.html">We are Hiring</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="pricelist.html">Pricing</a></li>
+                        </ul>
+                        <ul class="ftr-nav">
+                            <li><a href="press-release.html">Press Release</a></li>
+                            <li><a href="sitemap.html">Sitemap</a></li>
+                            <li><a href="privacy-policy.html">Privacy & Terms of Service</a></li>
+                            <li><a href="free-webdesign-ebook.html">Free Web Design Ebook</a></li>
+                            <li><a href="content-writing-services.html">Content Writing</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="footer-block hidden-xs"><strong class="footer-heading">For Business Enquiry</strong>
+                            <ul class="contact-list">
+                                <li class="ind-call common-icon-set"><a href="tel:+919828584906">+919828584906</a></li>
+                                <li class="usa-call common-icon-set"><a href="tel:+1 (315) 820-2084 ">+1 (315) 820-2084
+                                    </a></li>
+                                <li class="email common-icon-set"><a href="mailto:info@serpika.com">info@ serpika
+                                        .com</a></li>
+                            </ul>
+                        </div>
+                        <!-- <div class="footer-block hidden-xs"><strong class="footer-heading">For Job Opening</strong>
+                            <ul class="contact-list">
+                                <li class="job-call common-icon-set"><a href="tel:+917595064760">+91-7595064760</a></li>
+                                <li class="email common-icon-set"><a href="mailto:hr@webguru-india.com">hr@webguru-india.com</a></li>
+                            </ul>
+                        </div> -->
+                        <div class="footer-block">
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/dinitictechnologies" target="_blank"><i class="fa fa-facebook icon-facebook-logo"></i></a></li>
+                                <li><a href="https://twitter.com/dinitictechnologies" target="_blank"><i class="fa fa-twitter icon-twitter-logo-silhouette"></i></a></li>
+                                <li><a href="https://plus.google.com/+dinitictechnologies" target="_blank"><i class="fa fa-google-plus icon-google-plus"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/dinitictechnologies" target="_blank"><i
+                                            class="fa fa-youtube icon-youtube-logo"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/dinitictechnologies" target="_blank"><i
+                                            class="fa fa-linkedin icon-linkedin-logo"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 copy-right">
+                        <p>&copy; 2018 Copyright Dinitic Technologies Pvt. Ltd. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <div class="modal fade pop-up" id="requestQuote" tabindex="-1" role="dialog" aria-labelledby="requestQuote">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -412,34 +476,32 @@
                             <h2>REQUEST A QUOTE</h2><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                     aria-hidden="true">&times;</span></button>
                         </div>
-                        <form id="request-quote" name="request_quote">
+                        <form id="" method="POST" action="send_email.php" name="">
                             <div class="col-sm-12 col-xs-12">
-                                <div class="input-group"><input type="text" class="form-control" name="rq_name"
-                                        placeholder="Name"> <small class="blank-error error">Please enter your name!</small>
-                                    <small class="invalid-error error">Invalid name!</small></div>
+                                <div class="input-group"><input type="text" class="form-control" name="name"
+                                        placeholder="Name" maxlength="32" required>
+                                </div>
                             </div>
                             <div class="col-sm-12 col-xs-12">
-                                <div class="input-group"><input type="email" class="form-control" name="rq_email"
-                                        placeholder="Email"> <small class="blank-error error">Please enter your email!</small>
-                                    <small class="invalid-error error">Invalid email!</small></div>
+                                <div class="input-group"><input type="email" class="form-control" name="email"
+                                        placeholder="Email" required>
+                                </div>
                             </div>
                             <div class="col-sm-6 col-xs-12">
-                                <div class="input-group"><input type="text" class="form-control" name="rq_country"
-                                        placeholder="Country"> <small class="blank-error error">Please enter your
-                                        country name!</small> <small class="invalid-error error">Invalid country!</small></div>
+                                <div class="input-group"><input type="text" class="form-control" maxlength="40" name="country"
+                                        placeholder="Country" required> </div>
                             </div>
                             <div class="col-sm-6 col-xs-12">
-                                <div class="input-group"><input type="tel" class="form-control" name="rq_phone"
-                                        placeholder="Phone"> <small class="invalid-error error">Invalid phone number!</small></div>
+                                <div class="input-group"><input type="tel" maxlength="20" class="form-control" name="phone"
+                                        placeholder="Phone" required> </div>
                             </div>
                             <div class="col-sm-12 col-xs-12">
-                                <div class="input-group"><textarea class="form-control" name="rq_msg" placeholder="Message"></textarea><small
-                                        class="blank-error error">Please enter your message!</small></div>
+                                <div class="input-group"><textarea class="form-control" name="message" placeholder="Message"
+                                        required></textarea></div>
                             </div>
                             <div class="col-sm-12 col-xs-12">
                                 <div class="input-group no-pad"><input type="submit" class="submit-btn" value="Submit">
-                                    <div class="submit-loader"><i class="fa fa-circle-o-notch fa-spin"></i>&nbsp;&nbsp;&nbsp;Sending
-                                        Request</div>
+
                                 </div>
                             </div>
                         </form>
