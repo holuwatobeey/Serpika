@@ -3,7 +3,7 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "horluwatowbeey@gmail.com";
-    $email_subject = "Email from dipankar";
+    $email_subject = "Email";
  
     function died($error) {
         // your error code can go here
@@ -77,7 +77,7 @@ if(isset($_POST['email'])) {
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);  
+mail($email_to, $email_subject, $email_message, $headers);  
 ?>
  
 <!-- include your own success html here -->
@@ -89,17 +89,3 @@ $headers = 'From: '.$email_from."\r\n".
 }
 ?>
 
-
-<!-- <?php
-if(isset($_POST["SubmitBtn"])){
-
-$to = "horluwatowbeey@gmail.com";
-$subject = "Contact mail";
-$from=$_POST["email"];
-$msg=$_POST["msg"];
-$headers = "From: $from";
-
-mail($to,$subject,$msg,$headers);
-echo "Email successfully sent.";
-}
-?> -->
